@@ -41,12 +41,18 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-skoda-dynamic-blue hover:bg-[#005a75] text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <a
+              href="#contact"
+              className="bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
               Začít kurz
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+            </a>
+            <a
+              href="#courses"
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300"
+            >
               Více informací
-            </button>
+            </a>
           </div>
         </div>
       </div>

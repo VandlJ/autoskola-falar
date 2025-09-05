@@ -158,7 +158,7 @@ export default function Form() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-skoda-dynamic-blue hover:bg-[#005a75] disabled:bg-gray-400 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] disabled:transform-none disabled:cursor-not-allowed"
+                  className="w-full bg-skoda-dynamic-blue hover:bg-blue-hover disabled:bg-gray-400 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] disabled:transform-none disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Odesílám..." : "Odeslat přihlášku"}
                 </button>

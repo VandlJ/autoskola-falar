@@ -109,45 +109,6 @@ export default function FAQ() {
               </div>
             ))}
           </div>
-
-          {/* Contact CTA */}
-          <div className="mt-8 text-center">
-            <div className="bg-white rounded-xl p-6 lg:p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Nenašli jste odpověď na svou otázku?
-              </h3>
-              <p className="text-lg text-gray-600 mb-6">
-                Kontaktujte nás a rádi vám pomůžeme s jakýmkoli dotazem ohledně výuky řízení.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-skoda-dynamic-blue hover:bg-[#005a75] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
-                  Zavolat nám
-                </button>
-                <button className="border-2 border-skoda-dynamic-blue text-skoda-dynamic-blue hover:bg-skoda-dynamic-blue hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
-                  Napsat e-mail
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Contact Info */}
-          <div className="mt-6 grid md:grid-cols-3 gap-4 text-center">
-            <div className="bg-white rounded-lg p-4 border border-gray-200">
-              <div className="text-2xl mb-2">📞</div>
-              <p className="font-semibold text-gray-900">Telefon</p>
-              <p className="text-sm text-gray-600">+420 xxx xxx xxx</p>
-            </div>
-            <div className="bg-white rounded-lg p-4 border border-gray-200">
-              <div className="text-2xl mb-2">📧</div>
-              <p className="font-semibold text-gray-900">E-mail</p>
-              <p className="text-sm text-gray-600">info@autoskola-falar.cz</p>
-            </div>
-            <div className="bg-white rounded-lg p-4 border border-gray-200">
-              <div className="text-2xl mb-2">📍</div>
-              <p className="font-semibold text-gray-900">Pobočka</p>
-              <p className="text-sm text-gray-600">Vimperk • Prachatice</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

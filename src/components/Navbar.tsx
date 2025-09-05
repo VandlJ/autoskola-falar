@@ -25,6 +25,7 @@ export default function Navbar() {
     { href: "#about", label: "O nás" },
     { href: "#courses", label: "Kurzy" },
     { href: "#faq", label: "FAQ" },
+    { href: "#contact", label: "Přihlásit se" },
     { href: "#contact-info", label: "Kontakt" },
   ];
 
@@ -90,7 +91,7 @@ export default function Navbar() {
               {/* Contact CTA Button */}
               <a
                 href="tel:+420603173049"
-                className="ml-4 px-6 py-2 bg-skoda-dynamic-blue hover:bg-[#005a75] text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer"
+                className="ml-4 px-6 py-2 bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer"
               >
                 <svg
                   width="18"
@@ -167,7 +168,7 @@ export default function Navbar() {
             {/* Mobile Contact CTA Button */}
             <a
               href="tel:+420603173049"
-              className={`mt-4 px-4 py-3 bg-skoda-dynamic-blue hover:bg-[#005a75] text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer ${
+              className={`mt-4 px-4 py-3 bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer ${
                 isMenuOpen
                   ? "translate-x-0 opacity-100"
                   : "translate-x-4 opacity-0"

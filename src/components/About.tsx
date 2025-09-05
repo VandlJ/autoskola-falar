@@ -45,7 +45,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
-                  <span className="text-gray-700 text-base">Vyysoká úspěšnost u teoretických i praktických zkoušek</span>
+                  <span className="text-gray-700 text-base">Vysoká úspěšnost u teoretických i praktických zkoušek</span>
                 </div>
               </div>
             </div>
