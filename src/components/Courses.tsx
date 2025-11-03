@@ -1,4 +1,26 @@
+"use client";
+
 export default function Courses() {
+  const handleCourseClick = (e: React.MouseEvent<HTMLAnchorElement>, course: string) => {
+    e.preventDefault();
+    
+    // Scroll to contact section
+    const targetElement = document.getElementById('contact');
+    if (targetElement) {
+      const navbarHeight = 80;
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Set the URL hash with course parameter
+    window.location.hash = `contact?course=${course}`;
+  };
+
   return (
     <section id="courses" className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4">
@@ -9,7 +31,7 @@ export default function Courses() {
               Nabídka kurzů
             </h2>
             <div className="w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Specializujeme se na výuku řízení osobních automobilů s moderním
               přístupem.
             </p>
@@ -38,13 +60,13 @@ export default function Courses() {
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
                   <span className="text-gray-700">
-                    Teoretická příprava (12 hodin)
+                    Teoretická příprava (11 hodin)
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
                   <span className="text-gray-700">
-                    Praktické hodiny řízení (min. 24 hodin)
+                    Praktické hodiny řízení (min. 28 hodin)
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -65,14 +87,18 @@ export default function Courses() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <span className="text-3xl font-bold text-skoda-dynamic-blue">
-                      21 900 Kč
+                      22 000 Kč
                     </span>
                     <span className="text-gray-600 ml-2">kompletní kurz</span>
                   </div>
                 </div>
-                <button className="w-full bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02]">
+                <a 
+                  href="#contact?course=skupina-b"
+                  onClick={(e) => handleCourseClick(e, 'skupina-b')}
+                  className="block w-full bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] text-center"
+                >
                   Začít kurz skupiny B
-                </button>
+                </a>
               </div>
             </div>
 
@@ -96,13 +122,13 @@ export default function Courses() {
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
                   <span className="text-gray-700">
-                    Teoretická příprava (12 hodin)
+                    Teoretická příprava (11 hodin)
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
                   <span className="text-gray-700">
-                    Praktické hodiny řízení (min. 24 hodin)
+                    Praktické hodiny řízení (min. 28 hodin)
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -121,21 +147,25 @@ export default function Courses() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <span className="text-3xl font-bold text-skoda-dynamic-blue">
-                      22 900 Kč
+                      22 000 Kč
                     </span>
                     <span className="text-gray-600 ml-2">kompletní kurz</span>
                   </div>
                 </div>
-                <button className="w-full bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02]">
+                <a 
+                  href="#contact?course=l17"
+                  onClick={(e) => handleCourseClick(e, 'l17')}
+                  className="block w-full bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] text-center"
+                >
                   Začít kurz L17
-                </button>
+                </a>
               </div>
             </div>
           </div>
 
           {/* Contact CTA */}
           <div className="text-center mt-8">
-            <p className="text-lg text-gray-600 mb-4">
+            <p className="text-lg text-gray-600 mb-6">
               Máte otázky nebo si chcete rezervovat kurz?
             </p>
             <a

@@ -22,11 +22,12 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
+    { href: "#news", label: "Události" },
     { href: "#about", label: "O nás" },
     { href: "#courses", label: "Kurzy" },
-    { href: "#faq", label: "FAQ" },
+    { href: "#gallery", label: "Galerie" },
     { href: "#contact", label: "Přihlásit se" },
-    { href: "#contact-info", label: "Kontakt" },
+    { href: "#faq", label: "FAQ" },
   ];
 
   // Dynamic styling based on background
@@ -90,10 +91,10 @@ export default function Navbar() {
 
               {/* Contact CTA Button */}
               <a
-                href="tel:+420603173049"
+                href="#contact-info"
                 className="ml-4 px-6 py-2 bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer"
               >
-                <svg
+                {/* <svg
                   width="18"
                   height="18"
                   viewBox="0 0 24 24"
@@ -101,8 +102,8 @@ export default function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.22 11.22 0 003.48.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.22 11.22 0 00.56 3.48 1 1 0 01-.27 1.11l-2.2 2.2z" />
-                </svg>
-                <span>Zavolat</span>
+                </svg> */}
+                <span>Kontakt</span>
               </a>
             </div>
 
@@ -167,7 +168,7 @@ export default function Navbar() {
             ))}
             {/* Mobile Contact CTA Button */}
             <a
-              href="tel:+420603173049"
+              href="#contact-info"
               className={`mt-4 px-4 py-3 bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-skoda-dynamic-blue/25 flex items-center space-x-2 cursor-pointer ${
                 isMenuOpen
                   ? "translate-x-0 opacity-100"
@@ -180,7 +181,7 @@ export default function Navbar() {
               }}
               onClick={() => setIsMenuOpen(false)}
             >
-              <svg
+              {/* <svg
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
@@ -188,8 +189,8 @@ export default function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.22 11.22 0 003.48.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.22 11.22 0 00.56 3.48 1 1 0 01-.27 1.11l-2.2 2.2z" />
-              </svg>
-              <span>Zavolat</span>
+              </svg> */}
+              <span>Kontakt</span>
             </a>
           </div>
         </nav>

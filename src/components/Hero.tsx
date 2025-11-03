@@ -35,8 +35,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <h2 className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
-            Profesionální výuka řízení s moderním přístupem a zkušenými
-            instruktory. Získejte řidičský průkaz rychle a bezpečně.
+            Profesionální výuka řízení s moderním přístupem a zkušenými instruktory v individuálním režimu. Získejte řidičský průkaz rychle a bezpečně.
           </h2>
 
           {/* CTA Buttons */}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Contact() {
   return (
     <section id="contact-info" className="py-8 lg:py-12 bg-gray-50">
@@ -22,29 +24,46 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
                   Autoškola Falář Vimperk
                 </h3>
-                
+
                 <div className="space-y-4">
                   {/* Address */}
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-xl">📍</span>
+                      <Image
+                        src="/location.png"
+                        alt="Location"
+                        width={24}
+                        height={24}
+                        className="brightness-0 invert"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 mb-1">Adresa</p>
-                      <p className="text-gray-600">1. máje 194/15</p>
-                      <p className="text-gray-600">385 01 Vimperk II</p>
+                      <p className="text-gray-600">
+                        1. máje 194/15, 385 01 Vimperk II
+                      </p>
+                      {/* <p className="text-gray-600">385 01 Vimperk II</p> */}
                     </div>
                   </div>
 
                   {/* Phone */}
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center">
-                      <span className="text-white text-xl">📞</span>
+                      <Image
+                        src="/telephone.png"
+                        alt="Telephone"
+                        width={24}
+                        height={24}
+                        className="brightness-0 invert"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Telefon</p>
-                      <a href="tel:+420603173049" className="text-skoda-dynamic-blue hover:underline font-medium">
-                        +420 603 173 049
+                      <a
+                        href="tel:+420603173049"
+                        className="text-skoda-dynamic-blue hover:underline font-medium"
+                      >
+                        +420 606 050 530
                       </a>
                     </div>
                   </div>
@@ -52,11 +71,20 @@ export default function Contact() {
                   {/* Email */}
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center">
-                      <span className="text-white text-xl">📧</span>
+                      <Image
+                        src="/mail.png"
+                        alt="Email"
+                        width={24}
+                        height={24}
+                        className="brightness-0 invert"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">E-mail</p>
-                      <a href="mailto:info@autoskola-falar.cz" className="text-skoda-dynamic-blue hover:underline">
+                      <a
+                        href="mailto:info@autoskola-falar.cz"
+                        className="text-skoda-dynamic-blue hover:underline"
+                      >
                         info@autoskola-falar.cz
                       </a>
                     </div>
@@ -69,27 +97,37 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
                   Otevírací doba
                 </h3>
-                
+
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Pondělí</span>
-                    <span className="text-skoda-dynamic-blue font-semibold">8:00 - 12:00</span>
+                    <span className="text-skoda-dynamic-blue font-semibold">
+                      8:00 - 12:00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Úterý</span>
-                    <span className="text-gray-500">Zavřeno</span>
+                    <span className="text-skoda-dynamic-blue font-semibold">
+                      8:00 - 12:00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Středa</span>
-                    <span className="text-skoda-dynamic-blue font-semibold">12:00 - 17:00</span>
+                    <span className="text-skoda-dynamic-blue font-semibold">
+                      8:00 - 12:00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Čtvrtek</span>
-                    <span className="text-gray-500">Zavřeno</span>
+                    <span className="text-skoda-dynamic-blue font-semibold">
+                      8:00 - 12:00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Pátek</span>
-                    <span className="text-skoda-dynamic-blue font-semibold">8:00 - 12:00</span>
+                    <span className="text-skoda-dynamic-blue font-semibold">
+                      8:00 - 12:00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-medium text-gray-900">Sobota</span>
@@ -103,7 +141,8 @@ export default function Contact() {
 
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-skoda-dynamic-blue">
                   <p className="text-sm text-gray-700">
-                    <span className="font-semibold">💡 Tip:</span> Doporučujeme si předem domluvit schůzku telefonicky.
+                    <span className="font-semibold">💡 Tip:</span> Doporučujeme
+                    si předem domluvit schůzku telefonicky.
                   </p>
                 </div>
               </div>
@@ -115,7 +154,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
                   Kde nás najdete
                 </h3>
-                
+
                 {/* Map Container */}
                 <div className="aspect-[4/3] rounded-lg overflow-hidden border border-gray-200">
                   <iframe
@@ -130,13 +169,11 @@ export default function Contact() {
                   />
                 </div>
 
-                <div className="mt-4 text-sm text-gray-600 space-y-2">
+                <div className="mt-4 text-sm text-gray-600 space-y-1">
                   <div className="flex items-center space-x-2">
-                    <span>🚗</span>
                     <span>Parkování dostupné přímo u budovy</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span>🚌</span>
                     <span>Zastávka MHD: Náměstí (2 min. chůze)</span>
                   </div>
                 </div>
@@ -150,13 +187,13 @@ export default function Contact() {
                     href="tel:+420603173049"
                     className="w-full bg-white text-skoda-dynamic-blue font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-center block"
                   >
-                    📞 Zavolat nyní
+                    Zavolat nyní
                   </a>
                   <a
                     href="mailto:info@autoskola-falar.cz"
                     className="w-full border-2 border-white text-white hover:bg-white hover:text-skoda-dynamic-blue font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center block"
                   >
-                    📧 Napsat e-mail
+                    Napsat e-mail
                   </a>
                 </div>
               </div>

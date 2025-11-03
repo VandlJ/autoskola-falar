@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Autoškola Vimperk",
-  description: "Autoškola Vimperka | Stanislav Falář",
+  description: "Autoškola Vimperk | Stanislav Falář | Profesionální výuka řízení",
 };
 
 export default function RootLayout({
@@ -23,9 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="cs" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>

@@ -12,7 +12,7 @@ export default function About() {
             </h2>
             <div className="w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-4"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Moderní autoškola ve Vimperku a Prachaticích.
+              Moderní autoškola ve Vimperku, Prachaticích a Volarech.
             </p>
           </div>
 
@@ -24,28 +24,35 @@ export default function About() {
                 Autoškola Vimperk a Prachatice
               </h3>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Autoškola Falář poskytuje kvalitní výuku řízení ve Vimperku, Prachaticích a okolí. 
-                Kombinujeme moderní přístup 
-                s ověřenými metodami výuky.
+                Autoškola Falář poskytuje kvalitní výuku řízení ve Vimperku,
+                Prachaticích, Volarech a okolí. Kombinujeme moderní přístup s
+                ověřenými metodami výuky.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Naše autoškola Prachatice a Vimperk se specializuje na výuku řízení osobních automobilů 
-                (skupina B) s vysokou úspěšností u zkoušek a elektronickou evidencí &quot;Moje autoškola&quot;.
+                Naše autoškola se specializuje na výuku řízení osobních
+                automobilů (skupina B) s vysokou úspěšností u zkoušek a
+                elektronickou evidencí &quot;Moje autoškola&quot;.
               </p>
 
               {/* Key Features - Condensed */}
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
-                  <span className="text-gray-700 text-base">Instruktoři s dlouholetými zkušenostmi</span>
+                  <span className="text-gray-700 text-base">
+                    Instruktoři s dlouholetými zkušenostmi
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
-                  <span className="text-gray-700 text-base">Elektronická evidence &quot;Moje autoškola&quot;</span>
+                  <span className="text-gray-700 text-base">
+                    Elektronická evidence &quot;Moje autoškola&quot;
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-skoda-dynamic-blue rounded-full"></div>
-                  <span className="text-gray-700 text-base">Vysoká úspěšnost u teoretických i praktických zkoušek</span>
+                  <span className="text-gray-700 text-base">
+                    Vysoká úspěšnost u teoretických i praktických zkoušek
+                  </span>
                 </div>
               </div>
             </div>
