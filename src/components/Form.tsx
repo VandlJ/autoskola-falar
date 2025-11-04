@@ -82,41 +82,41 @@ export default function Form() {
   };
 
   return (
-    <section id="contact" className="py-8 lg:py-12 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-6 lg:mb-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Přihlášení do kurzu
             </h2>
-            <div className="w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="w-20 sm:w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-3 sm:mb-4"></div>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Zaregistrujte se do našeho kurzu nebo nás kontaktujte s jakýmkoli
               dotazem.
             </p>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-50 rounded-xl p-6 lg:p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <div className="bg-gray-50 rounded-xl p-5 sm:p-6 lg:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6 text-center">
               Kontaktní formulář
             </h3>
 
             {submitStatus === "success" && (
-              <div className="mb-6 p-4 bg-green-100 border border-green-300 rounded-lg">
-                <p className="text-green-800 font-semibold">
+              <div className="mb-5 sm:mb-6 p-3 sm:p-4 bg-green-100 border border-green-300 rounded-lg">
+                <p className="text-sm sm:text-base text-green-800 font-semibold">
                   ✓ Děkujeme! Vaše zpráva byla odeslána.
                 </p>
-                <p className="text-green-700 text-sm mt-1">
+                <p className="text-xs sm:text-sm text-green-700 mt-1">
                   Ozveme se vám co nejdříve.
                 </p>
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               {/* Row 1: Name and Email */}
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
                 {/* Name */}
                 <div>
                   <label

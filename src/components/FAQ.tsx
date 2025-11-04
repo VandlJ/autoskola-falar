@@ -54,22 +54,22 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-8 lg:py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-6 lg:mb-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Často kladené otázky
             </h2>
-            <div className="w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <div className="w-20 sm:w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-3 sm:mb-4"></div>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Odpovědi na nejčastější otázky o našich kurzech a službách.
             </p>
           </div>
 
           {/* FAQ Accordion */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
@@ -77,13 +77,13 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4 hover:cursor-pointer">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 pr-3 sm:pr-4 hover:cursor-pointer">
                     {faq.question}
                   </h3>
                   <div
-                    className={`transform transition-transform duration-200 ${
+                    className={`transform transition-transform duration-200 flex-shrink-0 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   >
@@ -103,9 +103,9 @@ export default function FAQ() {
                   </div>
                 </button>
                 {openIndex === index && (
-                  <div className="px-6 pb-4">
-                    <div className="border-t border-gray-100 pt-4">
-                      <p className="text-gray-700 leading-relaxed">
+                  <div className="px-4 sm:px-6 pb-3 sm:pb-4">
+                    <div className="border-t border-gray-100 pt-3 sm:pt-4">
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>

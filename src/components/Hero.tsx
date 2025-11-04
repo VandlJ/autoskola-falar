@@ -21,34 +21,34 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 min-h-screen flex items-center justify-center relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 min-h-screen flex items-center justify-center relative z-10">
+        <div className="text-center max-w-4xl mx-auto py-20 sm:py-0">
           {/* Main Heading */}
-          <h1 className="font-display font-bold text-white mb-6 tracking-tight leading-none">
-            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-2">
+          <h1 className="font-display font-bold text-white mb-4 sm:mb-6 tracking-tight leading-none">
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-1 sm:mb-2">
               AUTOŠKOLA
             </span>
-            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-skoda-dynamic-blue">
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-skoda-dynamic-blue">
               VIMPERK
             </span>
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 font-light leading-relaxed max-w-2xl mx-auto px-4">
             Profesionální výuka řízení s moderním přístupem a zkušenými instruktory v individuálním režimu. Získejte řidičský průkaz rychle a bezpečně.
           </h2>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <a
               href="#contact"
-              className="bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="w-full sm:w-auto bg-skoda-dynamic-blue hover:bg-blue-hover text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
             >
               Začít kurz
             </a>
             <a
               href="#courses"
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300"
+              className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg transition-all duration-300 text-center"
             >
               Více informací
             </a>

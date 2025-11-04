@@ -24,66 +24,65 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact-info" className="py-8 lg:py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="contact-info" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-6 lg:mb-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Kontakt
             </h2>
-            <div className="w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <div className="w-20 sm:w-24 h-1 bg-skoda-dynamic-blue mx-auto mb-3 sm:mb-4"></div>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Navštivte nás nebo nás kontaktujte. Jsme tu pro vás.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* Main Contact Card */}
-              <div className="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div className="bg-white rounded-xl p-5 sm:p-6 lg:p-8 shadow-sm border border-gray-200">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Autoškola Falář Vimperk
                 </h3>
 
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {/* Address */}
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center flex-shrink-0">
                       <Image
                         src="/location.png"
                         alt="Location"
-                        width={24}
-                        height={24}
-                        className="brightness-0 invert"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert sm:w-6 sm:h-6"
                       />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900 mb-1">Adresa</p>
-                      <p className="text-gray-600">
+                      <p className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Adresa</p>
+                      <p className="text-sm sm:text-base text-gray-600">
                         1. máje 194/15, 385 01 Vimperk II
                       </p>
-                      {/* <p className="text-gray-600">385 01 Vimperk II</p> */}
                     </div>
                   </div>
 
                   {/* Phone */}
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center flex-shrink-0">
                       <Image
                         src="/telephone.png"
                         alt="Telephone"
-                        width={24}
-                        height={24}
-                        className="brightness-0 invert"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert sm:w-6 sm:h-6"
                       />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">Telefon</p>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base">Telefon</p>
                       <a
                         href="tel:+420606050530"
-                        className="text-skoda-dynamic-blue hover:underline font-medium"
+                        className="text-sm sm:text-base text-skoda-dynamic-blue hover:underline font-medium"
                       >
                         +420 606 050 530
                       </a>
@@ -91,21 +90,21 @@ export default function Contact() {
                   </div>
 
                   {/* Email */}
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-skoda-dynamic-blue rounded-lg flex items-center justify-center flex-shrink-0">
                       <Image
                         src="/mail.png"
                         alt="Email"
-                        width={24}
-                        height={24}
-                        className="brightness-0 invert"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert sm:w-6 sm:h-6"
                       />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">E-mail</p>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base">E-mail</p>
                       <a
                         href="mailto:info@autoskola-falar.cz"
-                        className="text-skoda-dynamic-blue hover:underline"
+                        className="text-sm sm:text-base text-skoda-dynamic-blue hover:underline"
                       >
                         info@autoskola-falar.cz
                       </a>
@@ -115,7 +114,7 @@ export default function Contact() {
               </div>
 
               {/* Opening Hours */}
-              <div className="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-200">
+              <div className="bg-white rounded-xl p-5 sm:p-6 lg:p-8 shadow-sm border border-gray-200">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
                   Otevírací doba
                 </h3>
