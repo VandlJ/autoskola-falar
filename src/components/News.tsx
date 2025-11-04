@@ -7,7 +7,7 @@ export default function News() {
       id: 1,
       type: "warning", // "warning", "info", "success"
       title: "Nepřítomnost v kanceláři",
-      message: "Kancelář bude uzavřena 10. - 12. listopadu z důvodu školení. V naléhavých případech volejte +420 603 173 049.",
+      message: "Kancelář bude uzavřena 10. - 12. listopadu z důvodu školení. V naléhavých případech volejte +420 606 050 530.",
       date: "10. - 12. listopadu 2025",
       active: true // true = zobrazit, false = skrýt
     }

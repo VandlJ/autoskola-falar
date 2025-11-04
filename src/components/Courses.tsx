@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image';
+
 export default function Courses() {
   const handleCourseClick = (e: React.MouseEvent<HTMLAnchorElement>, course: string) => {
     e.preventDefault();
@@ -43,7 +45,13 @@ export default function Courses() {
             <div className="bg-gray-50 rounded-xl p-6 lg:p-8 border-2 border-transparent hover:border-skoda-dynamic-blue transition-all duration-300 hover:shadow-lg">
               <div className="mb-6">
                 <div className="inline-flex items-center space-x-2 bg-skoda-dynamic-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                  <span>🚗</span>
+                  <Image
+                    src="/car.png"
+                    alt="Skupina B"
+                    width={24}
+                    height={24}
+                    className="brightness-0 invert"
+                  />
                   <span>Skupina B</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -106,7 +114,13 @@ export default function Courses() {
             <div className="bg-gray-50 rounded-xl p-6 lg:p-8 border-2 border-transparent hover:border-skoda-dynamic-blue transition-all duration-300 hover:shadow-lg">
               <div className="mb-6">
                 <div className="inline-flex items-center space-x-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                  <span>🎓</span>
+                  <Image
+                    src="/student.png"
+                    alt="L17"
+                    width={24}
+                    height={24}
+                    className="brightness-0 invert"
+                  />
                   <span>L17</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -169,7 +183,8 @@ export default function Courses() {
               Máte otázky nebo si chcete rezervovat kurz?
             </p>
             <a
-              href="#contact"
+              href="#contact?course=konzultace"
+              onClick={(e) => handleCourseClick(e, 'konzultace')}
               className="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105"
             >
               Kontaktujte nás

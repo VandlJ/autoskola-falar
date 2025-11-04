@@ -8,6 +8,17 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+  const handleCategoryChange = (categoryId: string) => {
+    setActiveCategory(categoryId);
+    // Posun na začátek galerie
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const scrollAmount = 400;
@@ -68,7 +79,7 @@ export default function Gallery() {
           {categories.map((category) => (
             <button
               key={category.id}
-              onClick={() => setActiveCategory(category.id)}
+              onClick={() => handleCategoryChange(category.id)}
               className={`flex items-center space-x-3 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                 activeCategory === category.id
                   ? 'bg-white text-gray-900 shadow-lg scale-110'

@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -80,13 +80,13 @@ export default function Footer() {
                 <p>
                   Webové stránky vytvořila společnost{" "}
                   <a 
-                    href="https://www.appitect.eu" 
+                    href="https://www.zephyron.tech/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-red-400 hover:text-red-300 transition-colors underline"
                     title="Appitect - Tvorba webových stránek a aplikací"
                   >
-                    Appitect
+                    Zephyron
                   </a>
                 </p>
               </div>

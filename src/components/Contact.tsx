@@ -1,6 +1,28 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Contact() {
+    const handleCourseClick = (e: React.MouseEvent<HTMLAnchorElement>, course: string) => {
+    e.preventDefault();
+    
+    // Scroll to contact section
+    const targetElement = document.getElementById('contact');
+    if (targetElement) {
+      const navbarHeight = 80;
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Set the URL hash with course parameter
+    window.location.hash = `contact?course=${course}`;
+  };
+
   return (
     <section id="contact-info" className="py-8 lg:py-12 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -60,7 +82,7 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold text-gray-900">Telefon</p>
                       <a
-                        href="tel:+420603173049"
+                        href="tel:+420606050530"
                         className="text-skoda-dynamic-blue hover:underline font-medium"
                       >
                         +420 606 050 530
@@ -141,7 +163,7 @@ export default function Contact() {
 
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-skoda-dynamic-blue">
                   <p className="text-sm text-gray-700">
-                    <span className="font-semibold">💡 Tip:</span> Doporučujeme
+                    <span className="font-semibold"> Doporučejeme </span>
                     si předem domluvit schůzku telefonicky.
                   </p>
                 </div>
@@ -184,13 +206,14 @@ export default function Contact() {
                 <h3 className="text-xl font-bold mb-4">Potřebujete pomoc?</h3>
                 <div className="space-y-3">
                   <a
-                    href="tel:+420603173049"
+                    href="tel:+420606050530"
                     className="w-full bg-white text-skoda-dynamic-blue font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-center block"
                   >
                     Zavolat nyní
                   </a>
                   <a
-                    href="mailto:info@autoskola-falar.cz"
+                    href="#contact?course=konzultace"
+                    onClick={(e) => handleCourseClick(e, 'konzultace')}
                     className="w-full border-2 border-white text-white hover:bg-white hover:text-skoda-dynamic-blue font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center block"
                   >
                     Napsat e-mail

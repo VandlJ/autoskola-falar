@@ -56,22 +56,29 @@ export default function Form() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setTimeout(() => {
+          setFormData({ name: '', email: '', phone: '', course: '', message: '' });
+          setSubmitStatus('idle');
+        }, 3000);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      // Log the error for debugging and retain user-facing error state
+      console.error(error);
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus("success");
-      // Reset form after success
-      setTimeout(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          course: "",
-          message: "",
-        });
-        setSubmitStatus("idle");
-      }, 3000);
-    }, 1500);
+    }
   };
 
   return (
